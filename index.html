@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="karban.css">
+</head>
+<body>
+    <div class="container">
+        <!-- To Do Board -->
+        <div class="board" >
+          <div class="board-header">To Do</div>
+          <div class="board-body" id="to-do-board">
+            <div class="item" draggable="true">
+              <span>Save Money</span>
+              <button class="delete-btn">X</button>
+            </div>
+            <div class="item" draggable="true">
+              <span>Learn AWS</span>
+              <button class="delete-btn">X</button>
+            </div>
+           
+          </div>
+        </div>
+        <!-- In Progress Board -->
+        <div class="board" >
+          <div class="board-header">In Progress</div>
+          <div class="board-body" id="progress-board">
+            <!-- Tasks can be added here -->
+          </div>
+        </div>
+        <!-- Done Board -->
+        <div class="board" >
+          <div class="board-header">Done</div>
+          <div class="board-body" id="done-board">
+            <!-- Tasks can be added here -->
+          </div>
+        </div>
+      </div>
+      <button class="add-task">Add New Task</button>
+      <script src="kanban.js"></script>
+</body>
+</html>
